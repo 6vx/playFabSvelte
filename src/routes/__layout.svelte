@@ -9,7 +9,7 @@
     <title>playFabSvelte</title>
 </svelte:head>
 
-<h1>PlayFabSvelte</h1>
+<h1>Play<a href="/">Fab</a>Svelte</h1>
 
 <slot>
 

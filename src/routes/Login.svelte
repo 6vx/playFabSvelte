@@ -1,5 +1,4 @@
 <script lang="typescript">
-    import { get } from 'svelte/store'
     import { preferences } from '$lib/localStore'
 
     let usernameHolder = ""
@@ -35,20 +34,20 @@
 
 <div>
 
-    <div class="flex m-2">
+    <div class="flex">
         
         <div class="flex-auto">
             <label for="usernameInput">username</label>
             <input 
             bind:value="{usernameHolder}"
-            name="usernameInput" class="m-2 border-b-2 bg-black" type="text">
+            name="usernameInput" class="" type="text">
         </div>
 
         <div class="flex-auto">
             <label for="passwordInput">password</label>
             <input 
             bind:value="{passwordHolder}"
-            name="passwordInput" class="m-2 border-b-2 bg-black" type="password">
+            name="passwordInput" class="" type="password">
         </div>
 
         <div class="flex-auto">
