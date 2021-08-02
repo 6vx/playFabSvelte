@@ -1,0 +1,55 @@
+:root {
+    font-family: monospace;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    align-content: center;
+    justify-content: space-around;
+    display: flex;
+}
+body {
+    flex: auto;
+    max-width: 750px;
+}
+
+a {
+    color: pink;
+    text-decoration: none;
+}
+pre {
+    /* margin: 5px 5px 5px 5px; */
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    color: rgb(175, 175, 175);
+    border-right: 0.2rem outset pink;
+    box-shadow: 0 0 0 0.1rem rgb(71, 51, 54);
+    border-radius: 1em 2em 2em 1em;
+}
+
+blockquote {
+    border-left: 0.2rem outset pink;
+    border-radius: 2em 2em 2em 2em;
+    background-color: rgb(39, 39, 39);
+    color: rgb(175, 175, 175);
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 0 0 0.2rem rgb(20, 20, 20);
+    /* margin: 5px 5px 5px 5px */
+}
+h1 {
+    text-align: center;
+    /* margin: 0 0 0 0; */
+    /* padding: 0 0 0 0; */
+}
+h2 {
+    /* padding: 0 0 0 0; */
+    /* margin: 0 0 0 0; */
+}
+h3 {
+    margin: 0 0 0 0;
+}
+h4 {
+    margin: 0 0 0 0;
+}
+h5 {
+    text-align: center;
+}
