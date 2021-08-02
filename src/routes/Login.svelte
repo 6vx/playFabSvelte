@@ -1,15 +1,14 @@
-<script>
+<script lang="typescript">
     import { get } from 'svelte/store'
     import { preferences } from '$lib/localStore'
-    import PlayFab from 'playfab-sdk/Scripts/PlayFab/PlayFab'
-    import PlayFabClientSDK from 'playfab-sdk/Scripts/PlayFab/PlayFabClient'
 
     let usernameHolder = ""
     let passwordHolder = ""
     let results = {}
-    PlayFab.settings.titleId = "73021";
+    
 
     function login () {
+        PlayFab.settings.titleId = '73021'
         console.log("Attempting login.")
         
         let customLoginRequest = {"TitleId": "", "Username": "","Password":""};
@@ -18,6 +17,7 @@
             $preferences.Username = usernameHolder
             customLoginRequest.Password = passwordHolder
             $preferences.Password = passwordHolder
+        
         PlayFabClientSDK.LoginWithPlayFab(customLoginRequest, (res, err) => {
             if (err) {
                 console.log(err)
