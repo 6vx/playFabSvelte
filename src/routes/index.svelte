@@ -1,3 +1,7 @@
+<div class="logo">
+    <img src="https://deathmettastorage.s3.us-west-2.amazonaws.com/files/playfabsveltelogo128.png" alt="playfabsveltelogo">
+</div>
+
 <h2>How to use:</h2>
 <ol>
     <li>add <a href="https://blog.playfab.com/blog/playfab-now-serving-javascript-sdk-via-cdn/">playfab script</a> to head of <a href="https://github.com/6vx/playFabSvelte/blob/metta/src/app.html">app.html</a></li>
@@ -9,4 +13,13 @@
 <ul>
     <li><a href="/Login">Login</a> (8/2/21)</li>
 </ul>
+
+
+<style>
+    .logo {
+        text-align: center;
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+    }
+</style>
 
