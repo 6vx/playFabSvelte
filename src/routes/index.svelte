@@ -1,6 +1,3 @@
-<p>Svelte Kit: <a href="https://kit.svelte.dev/docs">docs</a></p>
-<p>Play Fab: <a href="https://docs.microsoft.com/en-us/gaming/playfab/">docs</a></p>
-
 <h2>How to use:</h2>
 <ol>
     <li>add <a href="https://blog.playfab.com/blog/playfab-now-serving-javascript-sdk-via-cdn/">playfab script</a> to head of <a href="https://github.com/6vx/playFabSvelte/blob/metta/src/app.html">app.html</a></li>
