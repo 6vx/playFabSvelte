@@ -1,5 +1,7 @@
 # playFab Svelte
 
+## [example](https://metta.d3nvj95fro2i68.amplifyapp.com/)
+
 ### adjustments from skeleton sveltekit project
 
 > https://github.com/joshnuss/svelte-local-storage-store

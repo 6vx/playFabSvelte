@@ -21,10 +21,10 @@
             if (err) {
                 console.log(err)
             } else {
-                // results = res.data
-                // $preferences.SessionTicket = results.SessionTicket
-                // $preferences.playFabId = results.PlayFabId
-                // console.log($preferences.SessionTicket)
+                results = res.data
+                $preferences.SessionTicket = results.SessionTicket
+                $preferences.playFabId = results.PlayFabId
+                console.log($preferences.SessionTicket)
                 console.log(res)
             }
         })   
@@ -33,6 +33,9 @@
 </script>
 
 <div>
+
+    <p>this component takes your username and password, saves them to local storage and tries to login with playfab.</p>
+    <p>if successful, the session ticket response will be saved to local storage and used for calls in other components.</p>
 
     <div class="flex">
         
