@@ -11,10 +11,10 @@
 
 <h2>components:</h2>
 <ul>
-    <li><a href="/RegisterPlayFabUser">Register PlayFab User</a> (8/2/21)</li>
-    <li><a href="/LoginWithPlayFab">Login With PlayFab</a> (8/2/21)</li>
-    <li><a href="/GetUserData">Get User Data</a> (8/3/21)</li>
-    <li><a href="/GetCatalogItems">Get Catalog Items</a> (8/3/21)</li>
+    <li><a href="/RegisterPlayFabUser">Register PlayFab User</a></li>
+    <li><a href="/LoginWithPlayFab">Login With PlayFab</a></li>
+    <li><a href="/GetUserData">Get User Data</a></li>
+    <li><a href="/GetCatalogItems">Get Catalog Items</a></li>
 </ul>
 
 <h2>notes:</h2>
