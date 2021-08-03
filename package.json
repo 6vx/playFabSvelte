@@ -28,6 +28,7 @@
   },
   "type": "module",
   "dependencies": {
+    "playfab-web-sdk": "^1.89.210802",
     "svelte-local-storage-store": "^0.2.3"
   }
 }

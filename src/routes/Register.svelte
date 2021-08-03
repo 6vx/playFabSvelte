@@ -8,7 +8,7 @@
     let visibleSuccess;
     
     function register () {
-        PlayFab.settings.titleId = '73021'
+        PlayFab.settings.titleId = $preferences.TitleId
         let customLoginRequest = {"TitleId": $preferences.TitleId, "Username": usernameHolder,"Password":passwordHolder, "Email":emailHolder, "RequireBothUsernameAndEmail":true};
         $preferences.Email = emailHolder
         PlayFabClientSDK.RegisterPlayFabUser(customLoginRequest, (res, err) => {

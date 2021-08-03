@@ -1,13 +1,9 @@
 <script lang="typescript">
-    import {preferences} from '$lib/localStore'
     import '$lib/styles.css';
-    
-
-    
 </script>
 
 <svelte:head>
-    <title>PlayFab+Svelte</title>
+    <title>PlayFab + Svelte</title>
 </svelte:head>
 
 <h1>PlayFab+Svelte</h1>

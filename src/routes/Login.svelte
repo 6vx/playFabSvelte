@@ -8,7 +8,7 @@
     
 
     function login () {
-        PlayFab.settings.titleId = '73021'
+        PlayFab.settings.titleId = $preferences.TitleId
         console.log("Attempting login.")
         // Verbose intentionally. 
         let customLoginRequest = {"TitleId": "", "Username": "","Password":""};
@@ -71,12 +71,12 @@
 
     <div class="success">
         {#if visibleSuccess}
-             <p>{visibleSuccess}</p>
+             <h1>{visibleSuccess}</h1>
         {/if}
     </div>
     <div class="error">
         {#if visibleError}
-             <p>{visibleError}</p>
+             <h1>{visibleError}</h1>
         {/if}
     </div>
 

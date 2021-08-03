@@ -9,6 +9,5 @@ export const preferences = writable('preferences', {
   Email: '',
   PlayFabId: '',
   Password: '',
-  walletResults:{},
-  leaderboardPosition:{}
+  Joined: '',
 })

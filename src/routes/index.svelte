@@ -13,6 +13,7 @@
 <ul>
     <li><a href="/Register">Register</a> (8/2/21)</li>
     <li><a href="/Login">Login</a> (8/2/21)</li>
+    <li><a href="/UserData">UserData</a> (8/3/21)</li>
 </ul>
 
 
