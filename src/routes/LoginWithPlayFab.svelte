@@ -1,4 +1,10 @@
 <script lang="typescript">
+    // https://svelte.dev/tutorial/store-bindings
+    // How to store values in Svelte
+
+    // https://t.ly/80XR
+    // PlayFab REST Api Login With PlayFab
+
     import { preferences } from '$lib/localStore'
     let usernameHolder = ""
     let passwordHolder = ""
@@ -37,6 +43,7 @@
 </script>
 
 <div>
+    <h1>Login With PlayFab</h1>
 
     <p>this component takes your username and password, saves them to local storage and tries to login with playfab.</p>
     <p>if successful, the session ticket response will be saved to local storage and used for calls in other components.</p>

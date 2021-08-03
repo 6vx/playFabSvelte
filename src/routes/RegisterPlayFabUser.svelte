@@ -1,4 +1,11 @@
 <script lang="typescript">
+    // https://svelte.dev/tutorial/text-inputs
+    // Binding text inputs in Svelte
+
+    // https://t.ly/LIQb
+    // PlayFab REST Api Register PlayFab User
+
+
     import { preferences } from '$lib/localStore'
     let usernameHolder = ""
     let passwordHolder = ""
@@ -27,6 +34,7 @@
 </script>
 
 <div>
+    <h1>Register PlayFab User</h1>
 
     <p>this component takes your email, username and password, saves them to local storage and tries to register with playfab.</p>
     <p>if successful, the session ticket response will be saved to local storage and used for calls in other components.</p>

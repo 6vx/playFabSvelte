@@ -1,4 +1,11 @@
 <script lang="typescript">
+    // https://svelte.dev/tutorial/group-inputs
+    // Using group inputs in Svelte
+
+    // https://t.ly/aYBP
+    // PlayFab REST Api Get Catalog Items
+    
+    
     import { preferences } from '$lib/localStore'
     let results;
     let CatalogVersion = null
