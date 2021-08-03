@@ -1,4 +1,4 @@
-# playFab + Svelte
+# PlayFab + Svelte
 
 ## Priority fixes
 
