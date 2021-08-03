@@ -1,29 +1,34 @@
 <script lang="typescript">
     import { preferences } from '$lib/localStore'
-
     let usernameHolder = ""
     let passwordHolder = ""
     let results = {}
+    let visibleError;
+    let visibleSuccess;
     
 
     function login () {
         PlayFab.settings.titleId = '73021'
         console.log("Attempting login.")
-        
+        // Verbose intentionally. 
         let customLoginRequest = {"TitleId": "", "Username": "","Password":""};
             customLoginRequest.TitleId = $preferences.TitleId
             customLoginRequest.Username = usernameHolder
-            $preferences.Username = usernameHolder
             customLoginRequest.Password = passwordHolder
+            // caching these values so that we can  
             $preferences.Password = passwordHolder
+            $preferences.Username = usernameHolder
+
         
         PlayFabClientSDK.LoginWithPlayFab(customLoginRequest, (res, err) => {
             if (err) {
                 console.log(err)
+                visibleError = err.error
             } else {
+                visibleSuccess = res.status
                 results = res.data
                 $preferences.SessionTicket = results.SessionTicket
-                $preferences.playFabId = results.PlayFabId
+                $preferences.PlayFabId = results.PlayFabId
                 console.log($preferences.SessionTicket)
                 console.log(res)
             }
@@ -42,6 +47,7 @@
         <div class="flex-auto">
             <label for="usernameInput">username</label>
             <input 
+            size="10"
             bind:value="{usernameHolder}"
             name="usernameInput" class="" type="text">
         </div>
@@ -49,6 +55,7 @@
         <div class="flex-auto">
             <label for="passwordInput">password</label>
             <input 
+            size="10"
             bind:value="{passwordHolder}"
             name="passwordInput" class="" type="password">
         </div>
@@ -60,6 +67,17 @@
             </button>
         </div>
 
+    </div>
+
+    <div class="success">
+        {#if visibleSuccess}
+             <p>{visibleSuccess}</p>
+        {/if}
+    </div>
+    <div class="error">
+        {#if visibleError}
+             <p>{visibleError}</p>
+        {/if}
     </div>
 
 

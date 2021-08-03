@@ -7,7 +7,7 @@ export const preferences = writable('preferences', {
   SessionTicket: '',
   Username: '',
   Email: '',
-  playFabId: '',
+  PlayFabId: '',
   Password: '',
   walletResults:{},
   leaderboardPosition:{}

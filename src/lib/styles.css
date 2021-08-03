@@ -56,14 +56,32 @@ h5 {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
 }
 
 .flex-auto {
     flex: auto;
+    padding: 5px 5px 5px 5px;
 }
 
 button {
     color: white;
     background-color: black;
     border: 2px solid pink;
+}
+
+.error {
+    padding-top: 25px;
+    color: red;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.success {
+    padding-top: 25px;
+    color: green;
+    text-transform: capitalize;
+    text-align: center;
 }

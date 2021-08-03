@@ -1,5 +1,9 @@
 # playFab + Svelte
 
+## Priority fixes
+
+- Methods seem to require hardcoding of titleId. When I use a store in the function it fails. How do I fix this?
+
 ![playfabsvelte logo](https://deathmettastorage.s3.us-west-2.amazonaws.com/files/playfabsveltelogo128.png)
 
 ## [example](https://metta.d3nvj95fro2i68.amplifyapp.com/)

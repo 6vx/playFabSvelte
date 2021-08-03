@@ -11,6 +11,7 @@
 
 <p>components:</p>
 <ul>
+    <li><a href="/Register">Register</a> (8/2/21)</li>
     <li><a href="/Login">Login</a> (8/2/21)</li>
 </ul>
 
@@ -18,7 +19,6 @@
 <style>
     .logo {
         text-align: center;
-        margin: 10px 10px 10px 10px;
         padding: 10px 10px 10px 10px;
     }
 </style>
