@@ -30,7 +30,7 @@
 </script>
 
 <div>
-    <h1>UserData</h1>
+    <h1>Get User Data</h1>
     <p>Requests and displays UserData.</p>
     <button on:click="{handleUserDataRequest}">Request Data</button>
 

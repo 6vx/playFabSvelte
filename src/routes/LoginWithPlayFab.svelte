@@ -5,7 +5,6 @@
     let results = {}
     let visibleError;
     let visibleSuccess;
-    
 
     function login () {
         PlayFab.settings.titleId = $preferences.TitleId
