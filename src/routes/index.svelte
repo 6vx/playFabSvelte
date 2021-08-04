@@ -13,15 +13,15 @@
 <ul>
     <li><a href="/RegisterPlayFabUser">Register PlayFab User</a></li>
     <li><a href="/LoginWithPlayFab">Login With PlayFab</a></li>
+    <li style="text-decoration: underline;">Must Be Logged In To Use Below</li>
     <li><a href="/GetUserData">Get User Data</a></li>
     <li><a href="/GetCatalogItems">Get Catalog Items</a></li>
 </ul>
 
 <h2>notes:</h2>
 <ul>
-    <li>Refreshing the page currently results in a new login being necessary, I'm hesitant to add a watcher to the layout because I'm trying to keep this as a super simple demonstration.</li>
-    <li>I'm using the CDN instead of the package. Not because that's the way I want it, but because it's the only way that I can get it to work right now.</li>
-    <li>I use lang="typescript" in most of my components for the assistance it provides, but I don't generally use anything that requires TS. You can use plain JS.</li>
+    <li>Refreshing the page currently results in a new login being necessary, I'm hesitant to add a watcher to the layout because I'm trying to keep this as a super plain demo.</li>
+    <li>Using the CDN instead of the npm package.</li>
 </ul>
 
 

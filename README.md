@@ -2,7 +2,13 @@
 
 ![playfabsvelte logo](https://deathmettastorage.s3.us-west-2.amazonaws.com/files/playfabsveltelogo128.png)
 
-## [example](https://metta.d3nvj95fro2i68.amplifyapp.com/)
+## [live example](https://metta.d3nvj95fro2i68.amplifyapp.com/)
+
+This project is meant to be used as an example for anyone trying to figure out how to use Svelte and PlayFab together. 
+
+If you've made a barebones component that covers a method I haven't already made (or just implemented yours better/more cleanly/more easily) please fork and make a pull request. 
+
+Deviations from the SvelteKit Skeleton Project Template will be listed below.
 
 ---
 
@@ -12,7 +18,9 @@
 
     npm install svelte-local-storage-store
 
-I use this in everything because I never wanted to figure out how to finnagle a store into localstorage.
+This puts your svelte store into local storage, I use this to maintain userdata between navigations.
+
+Remember when developing that if you change a variable in storage you'll need to clear your cache to see the changes (right click refresh with dev tools open in Microsoft Edge, for example).
 
 ---
 
@@ -39,13 +47,19 @@ Then add to svelte.config.js:
         }
     };
 
+AWS doesn't autodetect SvelteKit projects, and requires changing of the default build directory from '/' to 'build'
+
+Besides this it's flawless. Deploying from github should be easy for most providers. 
+
 ---
 
-## PlayFab CDN
+## PlayFab Script
 
 > https://blog.playfab.com/blog/playfab-now-serving-javascript-sdk-via-cdn/
 
-Personally I have a wonky dev experience with the NPM package for this and I use the CDN to pull it in at runtime. You do lose all that autocomplete action in the editor though which is kind of frustrating. Please contact me if you know how to get sveltekit and playfab to play nice together installed. 
+Don't know how to get npm playfab-web-sdk working tbh. And this saves bandwidth. So win win. 
+
+Wouldn't mind having some autocomplete in the editor but this is easier than trying to figure out webpack or babel or whatever rn. Ain't nobody got time for that.
 
 ---
 
@@ -53,27 +67,31 @@ Personally I have a wonky dev experience with the NPM package for this and I use
 
 > add src/lib
 
-I love the lib way of doing things and don't know why it was taken out of the default application.
+I love the lib way of doing things, never go back. Haters that want to old component folder are out their minds. 
 
 ---
 
 ## Change the titleId
 
-> TitleId
+> TitleId = "#####"
 
-Change the titleid to your titleId.
+Change the titleid in /lib/localStore.js to match your project's titleId.
+
+---
+
+# Contribution Guidelines
 
 ---
 
 ## boiler plate components for static svelte site
 
-I'd like to make this super barebones and allow people (or just myself) to simply swap in their own playFab title ID and get all the functionality of playFab right away. 
+Examples for copying / learning how to use playfab or svelte. 
 
-I like to build static sites only, I'll be making this with that in mind. I use AWS Lambda's in my normal life but I'll try to use the playFab cloudScripts when possible. They seem to have a limited funcionality and ... Actually now that I think about it...
+If a component is demonstrating something new for the first time it should contain lots of comments and very descriptive variable and method names. 
 
 ---
 
 ## cloudScript
 
-Going to put handlers needed to execute into the comments below a components script. That way anyone can just copy the handler into their own cloudScript revision and expect the functionality. Dope. 
+When using cloudscript handlers all script should be available as a comment at the bottom of the component for someone to copy and add to their own revision.
 
