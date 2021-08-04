@@ -15,9 +15,17 @@
     let visibleSuccess;
     
     function register () {
+
         PlayFab.settings.titleId = $preferences.TitleId
-        let customLoginRequest = {"TitleId": $preferences.TitleId, "Username": usernameHolder,"Password":passwordHolder, "Email":emailHolder, "RequireBothUsernameAndEmail":true};
+        
+        let customLoginRequest = {"TitleId": $preferences.TitleId, 
+                                    "Username": usernameHolder,
+                                    "Password":passwordHolder, 
+                                    "Email":emailHolder, 
+                                    "RequireBothUsernameAndEmail":true};
+
         $preferences.Email = emailHolder
+        
         PlayFabClientSDK.RegisterPlayFabUser(customLoginRequest, (res, err) => {
             if (err) {
                 console.log(err)

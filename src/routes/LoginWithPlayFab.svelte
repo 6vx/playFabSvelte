@@ -77,6 +77,7 @@
 
     <div class="success">
         {#if visibleSuccess}
+            <a href="/">HOME</a>
              <h1>{visibleSuccess}</h1>
         {/if}
     </div>

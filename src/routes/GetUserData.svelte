@@ -7,13 +7,14 @@
 
     let httpHeaders = { 'X-Authentication' : $preferences.SessionTicket };
     let myHeaders = new Headers(httpHeaders);
+    
     function handleUserDataRequest () {
-            PlayFab.settings.titleId = "73021"
+            PlayFab.settings.titleId = $preferences.TitleId
             let customUserDataRequest = {};
                     customUserDataRequest.TitleId = $preferences.TitleId
                     customUserDataRequest.headers = myHeaders
                     customUserDataRequest.PlayFabId = $preferences.PlayFabId
-                    // customUserDataRequest.string = userDataRequestList
+
             PlayFabClientSDK.GetUserData(customUserDataRequest, (res, err) => {
                     if (err) {
                         console.log(err)
@@ -34,13 +35,9 @@
     <p>Requests and displays UserData.</p>
     <button on:click="{handleUserDataRequest}">Request Data</button>
 
-    {#if $preferences.Joined}
-       Joined: {$preferences.Joined}
-    {/if}
-
-
     <div class="success">
         {#if visibleSuccess}
+        User Joined: {$preferences.Joined}
              <h1>{visibleSuccess}</h1>
         {/if}
     </div>

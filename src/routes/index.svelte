@@ -16,6 +16,7 @@
     <li style="text-decoration: underline;">Must Be Logged In To Use Below</li>
     <li><a href="/GetUserData">Get User Data</a></li>
     <li><a href="/GetCatalogItems">Get Catalog Items</a></li>
+    <li><a href="/GetUserInventory">Get User Inventory</a></li>
 </ul>
 
 <h2>notes:</h2>
