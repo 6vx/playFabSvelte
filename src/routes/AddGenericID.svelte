@@ -1,4 +1,6 @@
 <script>
+    // Not working // WIP 
+
     // https://t.ly/MMD0
     // PlayFab Rest API Add Generic ID
 
@@ -39,6 +41,7 @@
 </script>
 
 <div>
+    <h2>not working! WIP</h2>
     <h1>Add Generic ID</h1>
     <p>Generic service identifier to add to the player account.</p>
     <textarea bind:value="{newId}" name="" id="" cols="10" rows="1"></textarea>

@@ -41,9 +41,7 @@
         <label>
         <input type="radio" bind:group={selectedClan} name="catalog" value="{clan}">
         {clan}
-        </label>
-        <br>
-        <br>
+        </label><br><br>
     {/each}
 
     <button on:click="{updateUserData}">Update User Data</button>

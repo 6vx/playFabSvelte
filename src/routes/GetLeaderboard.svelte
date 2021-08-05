@@ -35,11 +35,9 @@
 <div>
     <h1>Get Leaderboard</h1>
     <p>Retrieves a list of ranked users for the given statistic, starting from the indicated point in the leaderboard</p>
-    <button on:click="{getLeaderboard}">Get Leaderboard</button>
-    <br>
-    
+    <button on:click="{getLeaderboard}">Get Leaderboard</button><br><br>
+
     {#if leaderboard}
-    <br>
         <h3>leaderboard</h3>
         {#each leaderboard as entry}
            <p>#{entry.Position + 1}: {entry.PlayFabId} - {entry.StatValue}pts</p>
