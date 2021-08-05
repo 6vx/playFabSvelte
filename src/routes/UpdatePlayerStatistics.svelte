@@ -34,7 +34,7 @@
 <div>
     <h1>Update Player Statistics</h1>
     <p>Creates and updates the title-specific custom data for the user which is readable and writable by the client.</p>
-    <input type="text" bind:value="{luckyNumber}">
+    Lucky Number:  <input type="text" bind:value="{luckyNumber}">
     <button on:click="{updatePlayerStatistics}">Update Player Statistics</button>
 
     <div class="success">

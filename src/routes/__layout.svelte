@@ -8,9 +8,10 @@
 </svelte:head>
 
 <h1>PlayFab + Svelte</h1>
-<p> <a href="/">Home</a> - 
+<p> 
     <a target="_blank" href="https://kitebot.ca">Kitebot</a> - 
     <a target="_blank" href="https://kit.svelte.dev/docs">SvelteKit</a> - 
+    <a href="/">Home</a> - 
     <a target="_blank" href="https://docs.microsoft.com/en-us/rest/api/playfab/client/?view=playfab-rest">PlayFab</a> - 
     <a target="_blank" href="https://github.com/6vx/playFabSvelte">Github</a>
 </p>

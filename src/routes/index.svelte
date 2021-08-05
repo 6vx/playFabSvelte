@@ -23,7 +23,9 @@
     <!-- <li><a href="/AddGenericID">Add Generic ID</a></li> -->
     <li><a href="/GetAccountInfo">Get Account Info</a></li>
     <li><a href="/GetPlayerStatistics">Get Player Statistics</a></li>
-    <li><a href="/UpdatePlayerStatistics">Update Player Statistics</a> (disabled server side)</li>  
+    <li><a href="/UpdatePlayerStatistics">Update Player Statistics</a> (disabled server side)</li> 
+    <li><a href="/GetLeaderboard">Get Leaderboard</a></li>  
+     
 </ul>
 
 <h2>notes:</h2>

@@ -6,8 +6,7 @@
     // PlayFab REST Api Login With PlayFab
 
     import { preferences } from '$lib/localStore'
-    let usernameHolder = ""
-    let passwordHolder = ""
+
     let results = {}
     let visibleError;
     let visibleSuccess;
@@ -18,11 +17,8 @@
         // Verbose intentionally. 
         let customLoginRequest = {"TitleId": "", "Username": "","Password":""};
             customLoginRequest.TitleId = $preferences.TitleId
-            customLoginRequest.Username = usernameHolder
-            customLoginRequest.Password = passwordHolder
-            // caching these values so that we can  
-            $preferences.Password = passwordHolder
-            $preferences.Username = usernameHolder
+            customLoginRequest.Username = $preferences.Username
+            customLoginRequest.Password = $preferences.Password
 
         
         PlayFabClientSDK.LoginWithPlayFab(customLoginRequest, (res, err) => {
@@ -54,7 +50,7 @@
             <label for="usernameInput">username</label>
             <input 
             size="10"
-            bind:value="{usernameHolder}"
+            bind:value="{$preferences.Username}"
             name="usernameInput" class="" type="text">
         </div>
 
@@ -62,7 +58,7 @@
             <label for="passwordInput">password</label>
             <input 
             size="10"
-            bind:value="{passwordHolder}"
+            bind:value="{$preferences.Password}"
             name="passwordInput" class="" type="password">
         </div>
 
