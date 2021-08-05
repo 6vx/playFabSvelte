@@ -1,14 +1,14 @@
 <script>
-    
+    // Taking this out for a while. At least until I've got more stuff completed.
 </script>
 
 <svelte:head>
-    <script src="https://www.paypal.com/sdk/js?client-id=Abdm6KJ9I__HHXjivNcC0twUKLJRT_3KKZkg7aD3c4zRGGSOwN_7NlZHAKfhyDa7cdxdI4uDXUdbrkL7&vault=true&intent=subscription"></script>
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=Abdm6KJ9I__HHXjivNcC0twUKLJRT_3KKZkg7aD3c4zRGGSOwN_7NlZHAKfhyDa7cdxdI4uDXUdbrkL7&vault=true&intent=subscription"></script> -->
 </svelte:head>
 
 <div>
-    <p>Please send stars and shares and money.</p>
-    <div id="holder"></div>
+    <p>Please send stars and shares and money?</p>
+    <!-- <div id="holder"></div>
 
     <script>paypal.Buttons({
         style: {
@@ -26,7 +26,7 @@
         onApprove: function(data, actions) {
           alert(data.subscriptionID); // You can add optional success message for the subscriber here
         }
-    }).render('body');</script>
+    }).render('body');</script> -->
 </div>
 
 <style>
