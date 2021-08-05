@@ -30,7 +30,7 @@
 
 <h2>notes:</h2>
 <ul>
-    <li>Refreshing the page currently results in a new login being necessary, I'm hesitant to add a watcher to the layout because I'm trying to keep this as a super plain demo.</li>
+    <li>Refreshing the page currently results in a new login being necessary, I'm hesitant to add a watcher to the layout.</li>
     <li>Using the CDN instead of the npm package.</li>
 </ul>
 
