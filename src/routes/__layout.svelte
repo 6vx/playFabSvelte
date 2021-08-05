@@ -1,5 +1,6 @@
 <script lang="typescript">
     import '$lib/styles.css';
+    import {preferences} from '$lib/localStore'
 </script>
 
 <svelte:head>

@@ -1,6 +1,12 @@
 <script>
-    // https://t.ly/6uWl
-    // PlayFab Rest API Get User Inventory
+    // https://t.ly/MMD0
+    // PlayFab Rest API Add Generic ID
+
+    // I don't think I actually know what a GenericID is.
+    // Ooooooh this must be some way to take a visitor account
+    // and turn it into a real account. 
+
+    // K in that case - SKIP! :D
 
     import { preferences } from '$lib/localStore'
     
@@ -8,23 +14,23 @@
     let visibleError;
     let visibleSuccess;
 
-    let wallet;
-    let currencies = ['DM','GO','JU','SI','TI']
+    let newId = '';
     
-    function getUserInventory () {
+    function changeID () {
             PlayFab.settings.titleId = $preferences.TitleId
 
             let customRequest = {headers: { 'X-Authentication' : $preferences.SessionTicket }};
+            customRequest.GenericID = newId
 
-            PlayFabClientSDK.GetUserInventory(customRequest, (res, err) => {
+            PlayFabClientSDK.AddGenericID(customRequest, (res, err) => {
                     if (err) {
                         console.log(err)
                         visibleError = err.error
                     } else {
                         visibleSuccess = res.status
                         console.log(res.data)
-                        results = res.data.Inventory
-                        wallet = res.data.VirtualCurrency
+                        results = res.data
+ 
                         console.log(results)
                     }
                 })
@@ -33,20 +39,11 @@
 </script>
 
 <div>
-    <h1>Get User Inventory</h1>
-    <p>Requests and displays User Inventory.</p>
-    <button on:click="{getUserInventory}">Request Inventory</button>
+    <h1>Add Generic ID</h1>
+    <p>Generic service identifier to add to the player account.</p>
+    <textarea bind:value="{newId}" name="" id="" cols="10" rows="1"></textarea>
+    <button on:click="{changeID}">Change ID</button>
 
-    {#if results}
-        <p>Inventory:</p>
-        {#each results as result}
-            <p>{result.DisplayName} - {result.Description}</p>
-        {/each} 
-        <p>Wallet:</p>
-        {#each currencies as currency}
-            <li>{currency}: {wallet[currency]}</li>            
-        {/each}  
-    {/if}
 
     <div class="success">
         {#if visibleSuccess}

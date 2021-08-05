@@ -1,6 +1,6 @@
 <script>
-    // https://t.ly/6uWl
-    // PlayFab Rest API Get User Inventory
+    // https://t.ly/eXxJ
+    // PlayFab Rest API Add Generic ID
 
     import { preferences } from '$lib/localStore'
     
@@ -8,23 +8,25 @@
     let visibleError;
     let visibleSuccess;
 
-    let wallet;
-    let currencies = ['DM','GO','JU','SI','TI']
+    let accountInfo = {Username:"",Created:""};
     
-    function getUserInventory () {
+    function getAccountInfo () {
             PlayFab.settings.titleId = $preferences.TitleId
 
             let customRequest = {headers: { 'X-Authentication' : $preferences.SessionTicket }};
+            
 
-            PlayFabClientSDK.GetUserInventory(customRequest, (res, err) => {
+            PlayFabClientSDK.GetAccountInfo(customRequest, (res, err) => {
                     if (err) {
                         console.log(err)
                         visibleError = err.error
                     } else {
                         visibleSuccess = res.status
                         console.log(res.data)
-                        results = res.data.Inventory
-                        wallet = res.data.VirtualCurrency
+                        results = res.data
+                        accountInfo.Username = res.data.AccountInfo.Username
+                        accountInfo.Created = res.data.AccountInfo.Created
+ 
                         console.log(results)
                     }
                 })
@@ -33,20 +35,14 @@
 </script>
 
 <div>
-    <h1>Get User Inventory</h1>
-    <p>Requests and displays User Inventory.</p>
-    <button on:click="{getUserInventory}">Request Inventory</button>
+    <h1>Get Account Info</h1>
+    <p>Retrieves the user's PlayFab account details.</p>
+    <button on:click="{getAccountInfo}">Get Account Info</button>
 
-    {#if results}
-        <p>Inventory:</p>
-        {#each results as result}
-            <p>{result.DisplayName} - {result.Description}</p>
-        {/each} 
-        <p>Wallet:</p>
-        {#each currencies as currency}
-            <li>{currency}: {wallet[currency]}</li>            
-        {/each}  
+    {#if visibleSuccess}
+        Username: {accountInfo.Username} - Created: {accountInfo.Created}
     {/if}
+
 
     <div class="success">
         {#if visibleSuccess}

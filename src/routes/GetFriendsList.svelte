@@ -1,6 +1,6 @@
 <script>
-    // https://t.ly/6uWl
-    // PlayFab Rest API Get User Inventory
+    // https://t.ly/sk7T
+    // PlayFab Rest API Get Friends List
 
     import { preferences } from '$lib/localStore'
     
@@ -8,24 +8,23 @@
     let visibleError;
     let visibleSuccess;
 
-    let wallet;
-    let currencies = ['DM','GO','JU','SI','TI']
+    let friendslist;
     
-    function getUserInventory () {
+    function getFriends () {
             PlayFab.settings.titleId = $preferences.TitleId
 
             let customRequest = {headers: { 'X-Authentication' : $preferences.SessionTicket }};
+            
 
-            PlayFabClientSDK.GetUserInventory(customRequest, (res, err) => {
+            PlayFabClientSDK.GetFriendsList(customRequest, (res, err) => {
                     if (err) {
                         console.log(err)
                         visibleError = err.error
                     } else {
                         visibleSuccess = res.status
                         console.log(res.data)
-                        results = res.data.Inventory
-                        wallet = res.data.VirtualCurrency
-                        console.log(results)
+                        results = res.data
+                        friendslist = res.data.Friends
                     }
                 })
         }
@@ -33,20 +32,17 @@
 </script>
 
 <div>
-    <h1>Get User Inventory</h1>
-    <p>Requests and displays User Inventory.</p>
-    <button on:click="{getUserInventory}">Request Inventory</button>
+    <h1>Get Friends List</h1>
+    <p>Retrieves the current friend list for the local user, constrained to users who have PlayFab accounts.</p>
+    <button on:click="{getFriends}">Get Friends List</button>
 
-    {#if results}
-        <p>Inventory:</p>
-        {#each results as result}
-            <p>{result.DisplayName} - {result.Description}</p>
-        {/each} 
-        <p>Wallet:</p>
-        {#each currencies as currency}
-            <li>{currency}: {wallet[currency]}</li>            
-        {/each}  
+    {#if visibleSuccess}
+        You have {friendslist.length} friends
+        {#each friendslist as friend}
+            <p>{JSON.stringify(friend)}</p>
+        {/each}
     {/if}
+
 
     <div class="success">
         {#if visibleSuccess}

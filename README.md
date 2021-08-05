@@ -6,6 +6,8 @@
 
 This project is meant to be used as an example for anyone trying to figure out how to use Svelte and PlayFab together. 
 
+Svelte is easy. PlayFab is cool and free. This seems practical. 
+
 If you've made a barebones component that covers a method I haven't already made (or just implemented yours better/more cleanly/more easily) please fork and make a pull request. 
 
 Deviations from the SvelteKit Skeleton Project Template will be listed below.
