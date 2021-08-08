@@ -13,18 +13,25 @@
 <ul>
     <li><a href="/RegisterPlayFabUser">Register PlayFab User</a></li>
     <li><a href="/LoginWithPlayFab">Login With PlayFab</a></li>
+    <li><a href="/SendAccountRecoveryEmail">Send Account Recovery Email</a></li>
     <li style="font-weight: bolder;">login to use below</li>
     <li><a href="/GetFriendsList">Get Friends List</a></li>
     <li><a href="/AddFriend">Add Friend</a></li>
-    <li><a href="/GetUserData">Get User Data</a></li>
     <li><a href="/UpdateUserData">Update User Data</a></li>
+    <li><a href="/GetUserData">Get User Data</a></li>
     <li><a href="/GetCatalogItems">Get Catalog Items</a></li>
     <li><a href="/GetUserInventory">Get User Inventory</a></li>
     <!-- <li><a href="/AddGenericID">Add Generic ID</a></li> -->
     <li><a href="/GetAccountInfo">Get Account Info</a></li>
     <li><a href="/GetPlayerStatistics">Get Player Statistics</a></li>
     <li><a href="/UpdatePlayerStatistics">Update Player Statistics</a> (disabled server side)</li> 
-    <li><a href="/GetLeaderboard">Get Leaderboard</a></li>  
+    <li><a href="/GetLeaderboard">Get Leaderboard</a></li>
+    <li><a href="/GetTime">Get Time</a></li>
+    <li><a href="/GetTitleData">Get Title Data</a></li>
+    <li><a href="/GetTitleNews">Get Title News</a></li>
+
+
+
      
 </ul>
 

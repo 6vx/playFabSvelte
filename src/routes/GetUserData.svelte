@@ -4,7 +4,7 @@
 
     import { preferences } from '$lib/localStore'
     let results = {}
-    let displayValues = ["joined","highScore","clan","xp", "level","wins"]
+    let displayValues = ["clan",]
     let visibleError;
     let visibleSuccess;
 
