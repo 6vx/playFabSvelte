@@ -33,7 +33,11 @@
 
 <div>
     <h1>Add Friend</h1>
-    <p>Adds the PlayFab user, based upon a match against a supplied unique identifier, to the friend list of the local user. At least one of FriendPlayFabId,FriendUsername,FriendEmail, or FriendTitleDisplayName should be initialized.</p>
+    <p>
+        Adds the PlayFab user, based upon a match against a supplied unique identifier, 
+        to the friend list of the local user. At least one of FriendPlayFabId, 
+        FriendUsername, FriendEmail, or FriendTitleDisplayName should be initialized.
+    </p>
     <input type="text" bind:value="{friendToAdd}">
     <button on:click="{addFriend}">Add Friend</button>
 

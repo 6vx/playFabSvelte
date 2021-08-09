@@ -35,6 +35,7 @@
 <div>
     <h1>Get Leaderboard</h1>
     <p>Retrieves a list of ranked users for the given statistic, starting from the indicated point in the leaderboard</p>
+    <p>(For demonstration purposes one player is awarded 2pts on the 15'th minute of every hour. 0-15 = leaderboard should be empty. 16-59 = leaderboard should have a player on it.)</p>
     <button on:click="{getLeaderboard}">Get Leaderboard</button><br><br>
 
     {#if leaderboard}

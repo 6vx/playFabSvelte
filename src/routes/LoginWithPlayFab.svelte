@@ -41,8 +41,15 @@
 <div>
     <h1>Login With PlayFab</h1>
 
-    <p>this component takes your username and password, saves them to local storage and tries to login with playfab.</p>
-    <p>if successful, the session ticket response will be saved to local storage and used for calls in other components.</p>
+    <p>
+        Signs the user into the PlayFab account, returning a session 
+        identifier that can subsequently be used for API calls which 
+        require an authenticated user. Unlike most other login API calls, 
+        LoginWithPlayFab does not permit the creation of new accounts 
+        via the CreateAccountFlag. Username/Password credentials may 
+        be used to create accounts via RegisterPlayFabUser, or added 
+        to existing accounts using AddUsernamePassword.
+    </p>
 
     <div class="flex">
         

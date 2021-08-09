@@ -12,9 +12,7 @@
     
     function getTime () {
             PlayFab.settings.titleId = $preferences.TitleId
-
             let customRequest = { headers: { 'X-Authentication' : $preferences.SessionTicket }};
-
             PlayFabClientSDK.GetTime(customRequest, (res, err) => {
                     if (err) {
                         console.log(err)
@@ -27,7 +25,6 @@
                     }
                 })
         }
-
 </script>
 
 <div>
