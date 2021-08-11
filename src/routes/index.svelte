@@ -1,3 +1,9 @@
+<script>
+
+</script>
+
+
+
 <div class="logo">
     <img src="https://deathmettastorage.s3.us-west-2.amazonaws.com/files/playfabsveltelogo128.png" alt="playfabsveltelogo">
 </div>
