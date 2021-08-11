@@ -14,7 +14,7 @@
     <li><a href="/RegisterPlayFabUser">Register PlayFab User</a></li>
     <li><a href="/LoginWithPlayFab">Login With PlayFab</a></li>
     <li><a href="/SendAccountRecoveryEmail">Send Account Recovery Email</a></li>
-    <li style="font-weight: bolder;">login to use below</li>
+    <p style="font-weight: bolder;">login to use below</p>
     <li><a href="/GetFriendsList">Get Friends List</a></li>
     <li><a href="/AddFriend">Add Friend</a></li>
     <li><a href="/UpdateUserData">Update User Data</a></li>
