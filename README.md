@@ -2,7 +2,12 @@
 
 ![playfabsvelte logo](https://deathmettastorage.s3.us-west-2.amazonaws.com/files/playfabsveltelogo128.png)
 
+### Every route in sveltekit IS a component
+
+Mix together components to achieve the functionality you need.
+
 ## [live example](https://metta.d3nvj95fro2i68.amplifyapp.com/)
+
 
 This project is meant to be used as an example for anyone trying to figure out how to use Svelte and PlayFab together. 
 
