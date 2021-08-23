@@ -6,6 +6,12 @@
 
 Mix together components to achieve the functionality you need.
 
+### short term goals
+
+- transactions
+- xbox live token
+- title news (Get/Set)
+
 ## [live example](https://metta.d3nvj95fro2i68.amplifyapp.com/)
 
 

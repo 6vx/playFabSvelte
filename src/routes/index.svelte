@@ -35,9 +35,6 @@
     <li><a href="/GetTime">Get Time</a></li>
     <li><a href="/GetTitleData">Get Title Data</a></li>
     <li><a href="/GetTitleNews">Get Title News</a></li>
-
-
-
      
 </ul>
 
