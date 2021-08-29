@@ -14,6 +14,14 @@ Mix together components to achieve the functionality you need.
 
 ## [live example](https://metta.d3nvj95fro2i68.amplifyapp.com/)
 
+Live example of this repo deployed as a static site, demonstrating basic component functionality with enough logic to display pertinent information. Minimal styling/overhead. 
+
+## [deathMetta](https://deathmetta.com/)
+
+A static web app word game that I'm working on using combinations of the components available in this repo. 
+
+---
+
 
 This project is meant to be used as an example for anyone trying to figure out how to use Svelte and PlayFab together. 
 
