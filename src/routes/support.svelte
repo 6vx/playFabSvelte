@@ -7,26 +7,7 @@
 </svelte:head>
 
 <div>
-    <p>Please send stars and shares and money?</p>
-    <!-- <div id="holder"></div>
-
-    <script>paypal.Buttons({
-        style: {
-            shape: 'pill',
-            color: 'white',
-            layout: 'horizontal',
-            label: 'subscribe'
-        },
-        createSubscription: function(data, actions) {
-          return actions.subscription.create({
-            /* Creates the subscription */
-            plan_id: 'P-8VT023724L426113JMEFYHUI'
-          });
-        },
-        onApprove: function(data, actions) {
-          alert(data.subscriptionID); // You can add optional success message for the subscriber here
-        }
-    }).render('body');</script> -->
+  <p>Contribute a commit or a coffee or something.</p>
 </div>
 
 <style>

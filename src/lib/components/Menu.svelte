@@ -1,4 +1,5 @@
 <script>
+    
     let title = "PlayFab + Svelte"
     
     let links = [

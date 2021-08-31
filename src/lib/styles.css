@@ -40,10 +40,6 @@ h1 {
     /* margin: 0 0 0 0; */
     /* padding: 0 0 0 0; */
 }
-h2 {
-    /* padding: 0 0 0 0; */
-    /* margin: 0 0 0 0; */
-}
 h3 {
     margin: 0 0 0 0;
 }
@@ -53,7 +49,6 @@ h4 {
 h5 {
     text-align: center;
 }
-
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -70,29 +65,21 @@ h5 {
 
 .flex-auto {
     flex: auto;
-    padding: 5px 5px 5px 5px;
 }
-
 button {
     color: white;
     background-color: black;
     border: 2px solid pink;
 }
-
 .error {
     padding-top: 25px;
     color: red;
     text-transform: capitalize;
     text-align: center;
 }
-
 .success {
     padding-top: 25px;
     color: green;
     text-transform: capitalize;
     text-align: center;
-}
-
-li {
-    padding: 5px 5px 5px 5px;
 }
