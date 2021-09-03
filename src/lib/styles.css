@@ -65,6 +65,7 @@ h5 {
 
 .flex-auto {
     flex: auto;
+    margin: 20px;
 }
 button {
     color: white;
@@ -78,7 +79,7 @@ button {
     text-align: center;
 }
 .success {
-    padding-top: 25px;
+    padding-top: 10px;
     color: green;
     text-transform: capitalize;
     text-align: center;
