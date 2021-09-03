@@ -8,7 +8,13 @@
     <img src="https://deathmettastorage.s3.us-west-2.amazonaws.com/files/playfabsveltelogo128.png" alt="playfabsveltelogo">
 </div>
 
-<p>In SvelteKit every route is also a component. To get x functionality, pop in that component.</p>
+<p>PlayFab is a super easy, free and well documented thing Microsoft offers.</p>
+
+<p>I was using a few functions a few times on different views and it was getting a little bit spaghetti,
+     so I figured I ought to turn the functions I need into components. Separation of concerns.</p>
+
+<p>In SvelteKit every route is also a component, so all these routes are also components. 
+    To get x functionality, pop in that component.</p>
 
 <h2>how to use:</h2>
 <ol>
@@ -44,6 +50,7 @@
 <ul>
     <li>Refreshing the page currently results in a new login being necessary, I'm hesitant to add a watcher to the layout.</li>
     <li>Using the CDN instead of the npm package.</li>
+    <li>I picked Kiya, Josie and Sam for Hell's Kitchen this season and I only have Kiya left.</li>
 </ul>
 
 
