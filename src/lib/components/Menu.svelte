@@ -36,7 +36,7 @@
     <div class="flex-r">
         {#each links as link}
             <div class="flex-auto">
-                <a href="{link.address}" target="_blank">{link.name}</a>
+                <p><a href="{link.address}" target="_blank">{link.name}</a></p>
             </div>
         {/each}
     </div>
@@ -46,5 +46,8 @@
 <style>
     .flex-r {
         font-size: small;
+    }
+    p {
+        text-align: center;
     }
 </style>
