@@ -59,6 +59,7 @@ h5 {
 .flex-r {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     flex-direction: row;
     text-align: center;
 }

@@ -47,7 +47,4 @@
     .flex-r {
         font-size: small;
     }
-    /* .flex-auto {
-        margin: 10px;
-    } */
 </style>
