@@ -3,7 +3,6 @@
     // PlayFab REST Api Send Account Recovery Email
     import { preferences } from '$lib/localStore'
     let emailHolder = ""
-    let results = {}
     let visibleError;
     let visibleSuccess;
 
@@ -21,7 +20,6 @@
                 results = res.data
             }
         })
-    
     }
 </script>
 
@@ -61,11 +59,4 @@
              <p>{visibleError}</p>
         {/if}
     </div>
-
-
-
 </div>
-
-<style>
-
-</style>

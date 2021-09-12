@@ -5,7 +5,6 @@
     // https://t.ly/aYBP
     // PlayFab REST Api Get Catalog Items
     
-    
     import { preferences } from '$lib/localStore'
     let results;
     let CatalogVersion = null

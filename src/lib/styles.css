@@ -10,7 +10,6 @@ body {
     flex: auto;
     max-width: 750px;
 }
-
 a {
     color: pink;
     text-decoration: none;
@@ -24,7 +23,6 @@ pre {
     box-shadow: 0 0 0 0.1rem rgb(71, 51, 54);
     border-radius: 1em 2em 2em 1em;
 }
-
 blockquote {
     border-left: 0.2rem outset pink;
     border-radius: 2em 2em 2em 2em;
@@ -55,7 +53,6 @@ h5 {
     flex-direction: column;
     text-align: center;
 }
-
 .flex-r {
     display: flex;
     flex-wrap: wrap;
@@ -63,7 +60,6 @@ h5 {
     flex-direction: row;
     text-align: center;
 }
-
 .flex-auto {
     flex: auto;
     margin: 20px;

@@ -4,7 +4,6 @@
 
     import { preferences } from '$lib/localStore'
     
-    let results;
     let visibleError;
     let visibleSuccess;
 
@@ -28,7 +27,6 @@
                     }
                 })
         }
-
 </script>
 
 <div>

@@ -1,1 +1,0 @@
-<div>Thank you for your support, an email containing all relevant details will be sent to you.</div>

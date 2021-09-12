@@ -4,7 +4,6 @@
 
     import { preferences } from '$lib/localStore'
     
-    let results;
     let visibleError;
     let visibleSuccess;
 
@@ -24,11 +23,9 @@
                     } else {
                         visibleSuccess = res.status
                         console.log(res.data)
-                        results = res.data
                     }
                 })
         }
-
 </script>
 
 <div>
@@ -40,9 +37,6 @@
     </p>
     <input type="text" bind:value="{friendToAdd}">
     <button on:click="{addFriend}">Add Friend</button>
-
-
-
 
     <div class="success">
         {#if visibleSuccess}

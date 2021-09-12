@@ -12,11 +12,5 @@
 </svelte:head>
 
 <Menu />
-
 <slot></slot>
-
 <Footer />
-
-<style>
-
-</style>

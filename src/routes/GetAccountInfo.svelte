@@ -31,7 +31,6 @@
                     }
                 })
         }
-
 </script>
 
 <div>
@@ -42,7 +41,6 @@
     {#if visibleSuccess}
         Username: {accountInfo.Username} - Created: {accountInfo.Created}
     {/if}
-
 
     <div class="success">
         {#if visibleSuccess}

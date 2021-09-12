@@ -4,7 +4,6 @@
 
     import { preferences } from '$lib/localStore'
     
-    let results;
     let visibleError;
     let visibleSuccess;
 
@@ -22,12 +21,10 @@
                     } else {
                         visibleSuccess = res.status
                         console.log(res.data)
-                        results = res.data
                         titleNews = res.data.News
                     }
                 })
         }
-
 </script>
 
 <div>

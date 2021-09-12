@@ -35,7 +35,6 @@
             }
         })   
     }
-
 </script>
 
 <div>
@@ -52,7 +51,6 @@
     </p>
 
     <div class="flex">
-        
         <div class="flex-auto">
             <label for="usernameInput">username</label>
             <input 
@@ -75,7 +73,6 @@
                 login
             </button>
         </div>
-
     </div>
 
     <div class="success">
@@ -88,7 +85,4 @@
              <h1>{visibleError}</h1>
         {/if}
     </div>
-
-
-
 </div>

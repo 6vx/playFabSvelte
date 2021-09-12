@@ -1,9 +1,3 @@
-<script>
-
-</script>
-
-
-
 <div class="logo">
     <img src="https://deathmettastorage.s3.us-west-2.amazonaws.com/files/playfabsveltelogo128.png" alt="playfabsveltelogo">
 </div>
@@ -43,7 +37,6 @@
     <li><a href="/GetTime">Get Time</a></li>
     <li><a href="/GetTitleData">Get Title Data</a></li>
     <li><a href="/GetTitleNews">Get Title News</a></li>
-     
 </ul>
 
 <h2>notes:</h2>
@@ -52,7 +45,6 @@
     <li>Using the CDN instead of the npm package.</li>
     <li>I picked Kiya, Josie and Sam for Hell's Kitchen this season and I only have Kiya left.</li>
 </ul>
-
 
 <style>
     img {
@@ -64,4 +56,3 @@
         padding: 10px 10px 10px 10px;
     }
 </style>
-

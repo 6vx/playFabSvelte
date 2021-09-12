@@ -3,12 +3,11 @@
     // PlayFab Rest API Get Time
 
     import { preferences } from '$lib/localStore'
-    
-    let results;
-    let visibleError;
-    let visibleSuccess;
 
     let time;
+
+    let visibleError;
+    let visibleSuccess;
     
     function getTime () {
             PlayFab.settings.titleId = $preferences.TitleId
@@ -20,7 +19,6 @@
                     } else {
                         visibleSuccess = res.status
                         console.log(res.data)
-                        results = res.data
                         time = res.data.Time
                     }
                 })

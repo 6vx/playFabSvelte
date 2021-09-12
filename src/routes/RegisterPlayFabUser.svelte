@@ -110,11 +110,4 @@
              <p>{visibleError}</p>
         {/if}
     </div>
-
-
-
 </div>
-
-<style>
-
-</style>

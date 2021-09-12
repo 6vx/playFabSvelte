@@ -29,7 +29,6 @@
                     }
                 })
         }
-
 </script>
 
 <div>
@@ -43,7 +42,6 @@
             <p>{key} - {titleData[key]}</p>
         {/each}
     {/if}
-
 
     <div class="success">
         {#if visibleSuccess}

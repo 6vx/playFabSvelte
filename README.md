@@ -116,4 +116,3 @@ If a component is demonstrating something new for the first time it should conta
 ## cloudScript
 
 When using cloudscript handlers all script should be available as a comment at the bottom of the component for someone to copy and add to their own revision.
-

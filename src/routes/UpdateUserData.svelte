@@ -4,10 +4,8 @@
 
     import { preferences } from '$lib/localStore'
     
-    let results;
     let visibleError;
     let visibleSuccess;
-
 
     let selectedClan;
     let clans = ['red','green','blue','black','white']
@@ -26,11 +24,9 @@
                     } else {
                         visibleSuccess = res.status
                         console.log(res.data)
-                        results = res.data
                     }
                 })
         }
-
 </script>
 
 <div>
