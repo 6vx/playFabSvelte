@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://t.ly/lfaX
     // PlayFab Rest API Get Title Data
 

@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://t.ly/hhnf
     // PlayFab Rest API Get Time
 

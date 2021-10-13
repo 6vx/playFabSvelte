@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://t.ly/psb3
     // PlayFab Rest API Get Leaderboard
 

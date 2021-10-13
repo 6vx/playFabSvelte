@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://svelte.dev/tutorial/group-inputs
     // Using group inputs in Svelte
 

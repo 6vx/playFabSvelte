@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://t.ly/9Y1b
     // PlayFab Rest API Get Title News
 

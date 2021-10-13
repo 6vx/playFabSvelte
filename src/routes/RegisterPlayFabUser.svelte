@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://svelte.dev/tutorial/text-inputs
     // Binding text inputs in Svelte
 

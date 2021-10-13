@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://svelte.dev/tutorial/store-bindings
     // How to store values in Svelte
 

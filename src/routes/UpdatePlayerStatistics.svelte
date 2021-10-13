@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://t.ly/KRWz
     // PlayFab Rest API Update Player Statistics
 

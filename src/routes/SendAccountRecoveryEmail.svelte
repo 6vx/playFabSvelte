@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://t.ly/sksO
     // PlayFab REST Api Send Account Recovery Email
     import { preferences } from '$lib/localStore'

@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     // https://t.ly/oto4
     // PlayFab Rest API Get Player Statistics
 
