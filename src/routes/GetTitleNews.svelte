@@ -3,7 +3,7 @@
     // PlayFab Rest API Get Title News
 
     import { preferences } from '$lib/localStore'
-    
+
     let visibleError;
     let visibleSuccess;
 
@@ -34,7 +34,7 @@
 
     {#if titleNews}
         <h3>titleNews:</h3>
-        {JSON.stringify(titleNews)}
+        <p>{(titleNews[0].Body)}</p>
     {/if}
 
 

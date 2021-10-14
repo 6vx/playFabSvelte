@@ -2,7 +2,9 @@
     <img src="https://deathmettastorage.s3.us-west-2.amazonaws.com/files/playfabsveltelogo128.png" alt="playfabsveltelogo">
 </div>
 
-<p>PlayFab is a super easy, free and well documented thing Microsoft offers.</p>
+<p>PlayFab is a super easy, free and well documented service Microsoft offers. After describing it to someone, 
+    they commented "Oh, it sounds kinda like a firebase for games." I think that's pretty on the nose. 
+</p>
 
 <p>I was using a few functions a few times on different views and it was getting a little bit spaghetti,
      so I figured I ought to turn the functions I need into components. Separation of concerns.</p>
@@ -22,7 +24,7 @@
     <li><a href="/RegisterPlayFabUser">Register PlayFab User</a></li>
     <li><a href="/LoginWithPlayFab">Login With PlayFab</a></li>
     <li><a href="/SendAccountRecoveryEmail">Send Account Recovery Email</a></li>
-    <p style="font-weight: bolder;">login to use below</p>
+    <p style="font-weight: bolder;"><b>!login to use below!</b></p>
     <li><a href="/GetFriendsList">Get Friends List</a></li>
     <li><a href="/AddFriend">Add Friend</a></li>
     <li><a href="/UpdateUserData">Update User Data</a></li>
@@ -43,7 +45,7 @@
 <ul>
     <li>Refreshing the page currently results in a new login being necessary, I'm hesitant to add a watcher to the layout.</li>
     <li>Using the CDN instead of the npm package.</li>
-    <li>I picked Kiya, Josie and Sam for Hell's Kitchen this season and I only have Kiya left.</li>
+    <li>I picked Syd to win S41 of Survivor. I think she's got a real shot.</li>
 </ul>
 
 <style>
