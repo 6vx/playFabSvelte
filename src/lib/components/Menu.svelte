@@ -4,8 +4,8 @@
     
     let links = [
         {
-            address : "https://kitebot.ca",
-            name : "Kitebot",
+            address : "https://timgod.in",
+            name : "timgod.in",
         },
         {
             address : "https://github.com/6vx/playFabSvelte",
